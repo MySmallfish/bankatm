@@ -43,6 +43,14 @@
                 $scope.accountBalance = balance;
             });
         }
+        
+        
+        $scope.$watch('checkImage', function(value) {
+           if(value) {
+              navigator.alert("check: " + value);
+           }
+        }, true);
+        
     }
     
     angular.module("bank").controller("TransactionCtrl", TransactionCtrl);

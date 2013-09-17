@@ -5,10 +5,12 @@
         <form novalidate class="form-horizontal"        >
             Amount:
 <input type="number" ng-model="amount" required>
-
+<img ng-src="{{checkImage}}" ng-show="checkImage"/>
         </form>
     </div>
 <div class="span2">
 <button class="btn btn-block btn-primary" ng-click="deposit()">Deposit</button>    
+
+<button class="btn btn-block btn-primary" camera ng-model="checkImage">Check</button>    
 </div>
 </div>
