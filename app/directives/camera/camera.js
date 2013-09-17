@@ -6,7 +6,7 @@
       require: 'ngModel',
       link: function(scope, elm, attrs, ctrl) {
          elm.on('click', function() {
-             
+             alert("CAMERA");
             navigator.camera.getPicture(function (imageURI) {
                scope.$apply(function() {
                   ctrl.$setViewValue(imageURI);
