@@ -1,5 +1,20 @@
 (function(){
-    function TransactionCtrl($scope, $location,$filter,accountManager){
+    function TransactionCtrl($scope, $location,$filter,accountManager, scanner){
+        function onBarcodeScanned(barCode) {
+            alert("BC:", barCode);
+        }
+
+        $scope.$on("Simple.BarcodeScanned",
+            function(e, barCode) {
+                if (!$scope.$$phase) {
+                    $scope.$apply(function() {
+                        onBarcodeScanned(barCode);
+                    });
+                } else {
+                    onBarcodeScanned(barCode);
+                }
+            });         
+         scanner.scan();
          $scope.accountId = "ACC#1";
         if ($location.search().amount){
             $scope.amount = $location.search().amount;
@@ -26,7 +41,17 @@
         $scope.withdraw = function(){
             location.href="#/ApproveWithdraw?amount=" + $scope.amount;
         }
+        
+        
         $scope.deposit = function(){
+                        navigator.camera.getPicture(function (imageURI) {
+               $scope.$apply(function() {
+                  alert(imageURI);
+               });
+            }, function (err) {
+              alert("err");
+            }, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
+            
             accountManager.deposit($scope.accountId, $scope.amount).then(function(){
                 location.href="#/DepositConfirmation?amount=" + $scope.amount;    
             }, function(response){
@@ -36,7 +61,6 @@
                     $scope.errorMessage = "Unknown error"    ;
                 }
                 
-            });
         }
         $scope.balance = function(){
             accountManager.getBalance($scope.accountId).then(function(balance){

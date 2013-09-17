@@ -28,7 +28,7 @@
   <preference name="target-device"    value="universal" />
   <preference name="fullscreen"       value="false" />
   <preference name="webviewbounce" value="false" />
-  <icon src="img/app-icon.png" />
+  <icon src="app/img/icon.png" />
   <!--<icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
   <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
   <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
@@ -56,5 +56,5 @@
 
   <gap:splash src="img/ios/tablet.png"    gap:platform="ios"     width="320" height="480" />-->
 
-  <!--<gap:plugin name="com.phonegap.plugins.barcodescanner" />-->
+  <gap:plugin name="com.phonegap.plugins.barcodescanner" />
 </widget>
