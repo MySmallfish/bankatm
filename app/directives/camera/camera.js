@@ -13,7 +13,7 @@
                });
             }, function (err) {
                ctrl.$setValidity('error', false);
-            }/*, { quality: 50, destinationType: Cordova.Camera.DestinationType.FILE_URI }*/);
+            }, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
             
          });
       }
