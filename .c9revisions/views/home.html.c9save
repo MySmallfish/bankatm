@@ -1,0 +1,2 @@
+{"ts":1376895102244,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1376895284578,"patch":[[{"diffs":[[1,"<h1>Welcome to Tsofen Bank</h1>\n<p>\n    \n    Here you will be able to withdraw / deposit money.\n</p>\n<a href=\"#Login?action=Withdraw\">Withdraw</a>\n<a href=\"#Login?action=Deposit\">Deposit</a>\n<a href=\"#Login?action=Balance\">Balance</a>"]],"start1":0,"start2":0,"length1":0,"length2":234}]],"length":234,"saved":false}

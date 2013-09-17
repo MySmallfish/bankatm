@@ -1,0 +1,16 @@
+<h1>Withdraw</h1>
+<div class="row-fluid">
+<div class="span2">
+    <a class="btn btn-block btn-primary"  href="#/">Cancel</a>
+</div>
+<div class="span6 offset1">
+    <h3>Do you approve withdrawal of {{amount|currency:"NIS"}}?</h3>
+
+    <div class="alert alert-error" ng-show="errorMessage">{{ errorMessage }}</div>
+
+</div>
+<div class="span2">
+    <button class="btn btn-block" ng-click="approveWithdraw()">Approve</button>
+</div>
+
+</div>

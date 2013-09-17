@@ -1,0 +1,4 @@
+{"ts":1376896604623,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1376896645402,"patch":[[{"diffs":[[1,"<form novalidate>\n    <input type=\"password\" required maxlength=\"4\">\n</form>"]],"start1":0,"start2":0,"length1":0,"length2":76}]],"length":76,"saved":false}
+{"ts":1376896691401,"patch":[[{"diffs":[[0,"rd\" "],[-1,"required maxlength=\"4\""],[1,"ng-model=\"userPassword\" required maxlength=\"4\">\n    <button ng-click=\"loginUser(userPassword)\">Login</button"],[0,">\n</"]],"start1":41,"start2":41,"length1":30,"length2":116}]],"length":162,"saved":false}
+{"ts":1376898268778,"patch":[[{"diffs":[[0,"button>\n"],[1,"    \n    <div ng-show=\"errorMessage.length\">{{ errorMessage }}</div>\n"],[0,"</form>"]],"start1":147,"start2":147,"length1":15,"length2":84}]],"length":231,"saved":false}

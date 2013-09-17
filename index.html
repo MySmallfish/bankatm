@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Bank Tsofen</title>
+<link href="lib/bootstrap.min.css" rel="stylesheet">
+<link href="lib/font-awesome.min.css" rel="stylesheet">
+<link href="app/css/app.css" type="text/css" rel="stylesheet"/>
+<link href="app/directives/numpad/numpad.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+        <i style="color: blue; font-size: 150px;" class="icon-compass"></i>
+        <div ng-app="bank">
+            <ng-view/>    
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+<div class="row-fluid">
+    <div class="span3"></div>
+    <div class="span6 terms"><a href="#">Terms of services</a></div>
+    <div class="span3"></div>
+</div>
+
+        
+        </div>
+        
+        <script type="text/javascript" src="lib/angular.min.js"></script>
+        
+        <script type="text/javascript" src="app/app.js"></script>
+        
+        <script type="text/javascript" src="app/directives/numpad/numpad.js"></script>
+        
+        <script type="text/javascript" src="app/services/login-manager.js"></script>
+        <script type="text/javascript" src="app/services/account-manager.js"></script>
+        
+        <script type="text/javascript" src="app/controllers/home.js"></script>
+        <script type="text/javascript" src="app/controllers/login.js"></script>
+        <script type="text/javascript" src="app/controllers/transaction.js"></script>
+        
+    </body>
+</html>

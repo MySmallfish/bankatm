@@ -1,0 +1,30 @@
+<h1>Withdraw Money</h1>
+<div class="row-fluid">
+<div class="span2">
+<button class="btn btn-block btn-primary" ng-click="withdraw()">Specified Amount</button>
+<button class="btn btn-block " ng-click="amount = 100; withdraw()">100</button>
+<a href="#/" class="btn btn-block">Back</a>
+</div>
+<div class="span4 offset2">
+<form novalidate class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="accountId">Acocunt</label>
+        <div class="controls">
+        <input name="accountId" type="text" ng-model="accountId">    
+        </div>
+        
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="amount">Amount</label>
+        <div class="controls">
+            <input name="amount" type="number" ng-model="amount">        
+        </div>
+    </div>
+    
+</form>
+</div>
+<div class="span2">
+<button class="btn btn-block" ng-click="amount = 500; withdraw()">500</button>
+<button class="btn btn-block " ng-click="amount = 1000; withdraw()">1000</button>
+</div>
+</div>
